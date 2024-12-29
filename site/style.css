@@ -20,7 +20,7 @@ body {
 a {
   font-weight: normal;
   text-decoration: none; 
-  color:#5bef3d;
+  color:#3d5eef;
 }
 a:focus {
   outline: thin dotted;
@@ -58,9 +58,6 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
 }
-p + p {
-
-}
 
 /**
  * Quotes & Blockquotes
@@ -93,7 +90,7 @@ blockquote p:last-child {
 /* Full size background image */
 html, #container, .inner { background-color:transparent;}
 html {
-  background:url(background.png) center center no-repeat fixed;
+  background:url(images/background.png) center center no-repeat fixed;
   background-size:cover;
 }
 body {
@@ -126,7 +123,7 @@ ul.main-menu li a:hover {
 }
 ul.main-menu li a.active {
   color:#FFFFFF;
-  border-bottom-color:#EF6D3D;
+  border-bottom-color:#5bef3d;
 }
 
 /* Utility classes */

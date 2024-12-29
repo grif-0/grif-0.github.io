@@ -27,3 +27,21 @@
   });
   
 })(jQuery);
+
+// Function to load content into a container
+function loadContent(containerId, filePath) {
+    fetch(filePath)
+        .then(response => {
+            if (!response.ok) throw new Error(`Failed to load ${filePath}`);
+            return response.text();
+        })
+        .then(content => {
+            document.getElementById(containerId).innerHTML = content;
+        })
+        .catch(error => console.error(error));
+}
+
+// Load content for each region
+loadContent('home', '/site/pages/home.html');
+loadContent('projects', '/site/pages/projects.html');
+loadContent('contact', '/site/pages/contact.html');
