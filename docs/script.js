@@ -42,6 +42,6 @@ function loadContent(containerId, filePath) {
 }
 
 // Load content for each region
-loadContent('home', '/site/pages/home.html');
-loadContent('projects', '/site/pages/projects.html');
-loadContent('contact', '/site/pages/contact.html');
+loadContent('home', '/docs/pages/home.html');
+loadContent('projects', '/docs/pages/projects.html');
+loadContent('contact', '/docs/pages/contact.html');
